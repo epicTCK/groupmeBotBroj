@@ -3,7 +3,7 @@ import requests
 import os
 app = Flask(__name__)
 
-@app.route('/post', methods = ["GET"])
+@app.route('/post', methods = ['POST'])
 def post():
 	requests.post("https://api.groupme.com/v3/bots/post",{"text" : "Your message here", "bot_id" : "475117f0e94dd02bd7c7e380fc"})
 	print(request.data)
