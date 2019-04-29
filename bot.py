@@ -9,4 +9,4 @@ def post():
 	print(request.data)
 	return ''
 
-app.run(host='0.0.0.0', port=os.environ(['PORT']))
+app.run(host='0.0.0.0', port=os.environ.get('PORT'))
